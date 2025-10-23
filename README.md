@@ -1,0 +1,1 @@
+banyak cerita yaa kamu
