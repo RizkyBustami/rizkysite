@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Rizy File Viewer and Personal Portfolio Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizy | File Viewer & Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1055/1055646.png">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Style -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    nav {
+      background: #3b82f6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      color: #3b82f6;
+      border-left: 5px solid #3b82f6;
+      padding-left: 10px;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      background: #111827;
+      color: #9ca3af;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    .bio {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .bio img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    .bio h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .bio p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .container { padding: 20px; }
+      iframe { height: 350px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Rizy’s Portfolio & File Viewer</h1>
+    <p>Explore, Learn, and View Documents Seamlessly</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#files">Files</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Bio Section -->
+    <section id="about" class="bio">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture">
+      <h2>Rizy Preset</h2>
+      <p>Digital Creator • Music Enthusiast • Designer</p>
+      <p>Welcome to my portfolio and document viewer site. Here you can explore my projects and preview documents directly without downloading.</p>
+    </section>
+
+    <!-- File Viewer Section -->
+    <section id="files">
+      <h3 class="section-title">📄 Document Viewer</h3>
+
+      <h4>PDF Example</h4>
+      <iframe src="https://docs.google.com/gview?url=https://example.com/files/sample.pdf&embedded=true"></iframe>
+
+      <h4>Word Example</h4>
+      <iframe src="https://docs.google.com/gview?url=https://example.com/files/sample.docx&embedded=true"></iframe>
+
+      <h4>PowerPoint Example</h4>
+      <iframe src="https://docs.google.com/gview?url=https://example.com/files/sample.pptx&embedded=true"></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3 class="section-title">📬 Contact Me</h3>
+      <p>If you’d like to collaborate, connect, or learn more, reach out:</p>
+      <ul>
+        <li>Email: <a href="mailto:rizy.preset@gmail.com">rizy.preset@gmail.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/rizy" target="_blank">@rizy</a></li>
+        <li>GitHub: <a href="https://github.com/rizy" target="_blank">github.com/rizy</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Rizy Preset — All Rights Reserved.
+  </footer>
+
+</body>
+</html>
